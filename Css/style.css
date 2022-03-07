@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+
+*{
+  box-sizing: border-box;
+  
+}
+body{
+    background-color: #020102;    
+}
+.body{
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.Product{
+    background-color: #020102;
+}
+.nav{
+  
+  height: 80px;
+  width: 100%;
+    }
+label.logo{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+        }
+
+ #Hero{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Hero .texture{
+    width: 100%;
+    height: 110%;
+     position: absolute;
+    /* top: 0; */
+    left: 0;
+    z-index: 15;
+    /* background: url(../Images/texture.png); */
+}
+#Hero::after{
+    width: 100%;
+    height: 120%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4);
+
+}
+#Hero > video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100;
+    left: 0;
+    z-index: 5;
+    object-fit: cover;
+}
+#Hero .caption{
+    top: 30%;
+    position: relative;
+    z-index: 20;
+    color:white;
+    text-align: center;
+}
+#Hero .caption h1{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    
+    margin-bottom: 0.5rem;
+}
+#Hero .caption h3{
+
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100 ;
+    margin: 0;
+
+}  
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.about h2{
+    color: whitesmoke;
+    /* font-size:2.8rem; */
+    /* font-size: 1.8rem; */
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+}
+.about p{
+    display: flex;
+    align-items: center;
+    max-width:400px;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    /* font-size: 2rem; */
+    /* text-transform: lowercase; */
+    
+    color: #fff;
+    text-align: center;
+}
+.market{
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    text-align: center;
+}
+.market-content h2{
+    color: whitesmoke;
+    /* font-size:2.8rem; */
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+.market-content p{
+    display: flex;
+    align-items: center;
+    max-width:400px;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
+.nft-card{
+    display:flex;
+    margin: 10px;
+   flex-direction: column;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.nft-card img{
+    max-width: 100%;
+    transform: scale(1);
+    display: flex;
+    transition:all 0.3s ease-out;
+}
+.nft-card:hover img{
+    transform: scale(0.6) translateY(-10px);
+    opacity: 0.3;
+}
+.nft-card .discription{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-size:1.125rem;
+}
+.discription h3{
+    font-weight:300;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 20px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.3s;
+}
+.discription a{
+    color: #fff;
+    background:rgba(36, 99, 236, 0.815);
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    border: 5px;
+    border-radius: 20px;
+    transform: translateY(20px);
+    transition: all 0.1s ease-in 0.1s;
+}
+.discription a:hover{
+    background: rgb(23, 23, 145);
+}
+.nft-card:hover .discription h3{
+    opacity: 1;
+    transform: translateY(30px);
+}
+.nft-card:hover .discription a{
+    opacity: 1;
+    /* transform: translateY(30px); */
+}
+.para1{
+    align-items: center;
+    color:#fff;
+    /* background:#020102 ; */
+    margin: 10px;
+    /* font-size: 1.5rem; */
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 300;
+    text-align: center;
+}
+.Product h2{
+    align-items: center;
+    color: whitesmoke;
+    /* background:#020102 ; */
+    margin: 10px;
+    /* font-size: 2rem; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.Product h2::selection{
+    background:rgb(153, 212, 247);
+    
+}
+ .card{
+    z-index: 25;
+    margin: 80px;
+    left: 8%;
+    position: relative;
+    width: 0px;
+    height: 350px;
+    border-radius:20px;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.5s;
+
+}
+.card .circle{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+.card .circle::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d83133;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+
+}
+.card:hover .circle::before{
+    background:rgb(81, 164, 219);
+    clip-path: circle(400px at center);
+}
+.card img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    height: 250px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.card:hover img{
+    left:89%;
+    height: 350px;
+}
+.card .content{
+    position: relative;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    width: 50%;
+    left: 20%;
+    padding: 15px 15px 15px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.card .content h2{
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+.card .content p{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.card .content a{
+    position: relative;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    color: #111;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+ /* second can  */
+.card .circle1{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.card .circle1::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d83133;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+
+}
+.card:hover .circle1::before{
+    background:rgb(81, 164, 219);
+    clip-path: circle(400px at center);
+}
+/* third can */
+.card .circle2{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.card .circle2::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d83133;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+
+}
+.card:hover .circle2::before{
+    background:rgb(81, 164, 219);
+    clip-path: circle(400px at center);
+} 
+/* 
+forth can */
+.card .img1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    height: 180px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.card:hover .img1{
+    left:89%;
+    height: 300px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #020102;
+    height: auto;
+    width: 100vw;
+    z-index: -50;
+    font-family: 'Rajdhani', sans-serif;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    background: #C84B31;
+    opacity: 0.8;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer-content h3{
+    
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height:3rem;
+    text-transform: capitalize;
+}
+
+.footer-content p{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 5px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 30px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 2rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color:rgb(49, 156, 228);
+}
+
+.footer-bottom{
+    /* width: 100vw; */
+    padding: 20px 0;
+    background-color:#ECDBBA;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .6;
+} 
+
+
+/* old ipad screen*/
+@media screen and (min-width:768px){
+    #hero .caption h1{
+        font-size:2.5rem;
+    }
+    #hero .caption h2{
+        font-size:1.75rem;
+    }
+    /* nav{
+        display: none;
+    } */
+    
+}
+
+/* Mobile Phones */
+@media screen and (max-width:430px){
+    
+    .card .content{
+        padding: 20px;
+        
+    } 
+    nav{
+        display: none;
+    }
+    .about{
+        margin-top: 100px;
+    }
+}
+
+/* general tablets */
+@media screen and (max-width:992px){
+    .card{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 65px;
+    }
+    .card:hover{
+        height: 600px;
+    }
+    .card .content{
+        width: 100%;
+        left: 0;
+        padding: 20px;
+    }
+    .card:hover img{
+        top: 70%;
+        left: 50%;
+        height: 400px;
+
+    }
+    nav{
+        display: none;
+    }
+}
+/* ipad pro  screen*/
+@media screen and (min-width:992px){
+    #hero .caption h1{
+        font-size:3rem;
+    }
+    #hero .caption h2{
+        font-size:2rem;
+    }
+    .card{
+        width: 450px;
+    }
+    
+}
+/* windows normal screen */
+@media screen and (min-width:1200px){
+    #hero .caption h1{
+        font-size:4rem;
+    }
+    #hero .caption h2{
+        font-size:2.5rem;
+    }
+    .card{
+        width: 560px;
+        margin: 6px;
+    }
+    .card:hover img{
+    left:85%;
+    height: 350px;
+}
+    .footer-content p{
+        max-width: 500px;
+    }
+    
+    .about h2{
+        font-size:1.8rem ;
+    }
+    .about p{
+        font-size:2rem;
+        max-width: 1000px;
+    }
+    .para1{
+        font-size: 1.5rem;
+    }
+    .Product h2{
+        font-size: 2rem;
+    }
+    .market h2{
+        font-size: 2.8rem;
+    }
+    .market p{
+        font-size: 2rem;
+        max-width: 1000px;
+    }
+    .nft-card{
+        width: 300px;
+    }
+    
+        
+            
+}
+
