@@ -387,7 +387,7 @@ label.logo{
 } 
 /* 
 forth can */
-/* .card .img1{
+.card .img1{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -399,7 +399,7 @@ forth can */
 .card:hover .img1{
     left:89%;
     height: 300px;
-} */
+}
 
 .footer{
     position: absolute;
